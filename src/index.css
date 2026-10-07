@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+  themes: light --default, dark --prefersdark;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --bg-navbar: #000000;
+  --text-main: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-main: #1f2937;
+}
+
+[data-theme="dark"] {
+  --bg-navbar: #000000;
+
+  --bg-main: #000000;
+  --bg-section: #111827;
+
+  --text-main: #ffffff;
+  --text-secondary: #9ca3af;
+
+  --border-main: #1f2937;
+}
+
+[data-theme="light"] {
+  --bg-navbar: #ffffff;
+
+  --bg-main: #ffffff;
+  --bg-section: #eef1f3;
+
+  --text-main: #111827;
+  --text-secondary: #6b7280;
+
+  --border-main: #e5e7eb;
+}
+[data-theme="dark"] {
+  --bg-card: #030712;
+}
+
+[data-theme="light"] {
+  --bg-card: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-progress: #1f2937;
+}
+
+[data-theme="light"] {
+  --bg-progress: #e5e7eb;
+}
+
+.theme-bg-main {
+  background-color: var(--bg-main);
+}
+
+.theme-bg-section {
+  background-color: var(--bg-section);
+}
+
+.theme-text-main {
+  color: var(--text-main);
+}
+
+.theme-text-secondary {
+  color: var(--text-secondary);
+}
+
+.theme-border {
+  border-color: var(--border-main);
+}
+
+.theme-bg-card {
+  background-color: var(--bg-card);
+}
+
+.theme-bg-progress {
+  background-color: var(--bg-progress);
+}
+
+[data-theme="dark"] {
+  --bg-media: #111827;
+}
+
+[data-theme="light"] {
+  --bg-media: #e5e7eb;
+}
+
+.theme-bg-media {
+  background-color: var(--bg-media);
+}
+[data-theme="dark"] {
+  --bg-card-hover: #111827;
+}
+
+[data-theme="light"] {
+  --bg-card-hover: #f3f4f6;
+}
+
+.theme-bg-card-hover:hover {
+  background-color: var(--bg-card-hover);
+}
+
