@@ -39,7 +39,7 @@ const skillRef = useRef<HTMLDivElement>(null);
 
       <div className="flex justify-between mb-2  ">
         <div className="flex items-center gap-2">
-          <Icon className="w-5 h-5 " style={{ color }} />
+          {Icon && <Icon className="w-5 h-5 " style={{ color }} />}
 
           <span className="theme-text-main font-semibold">
             {name}
